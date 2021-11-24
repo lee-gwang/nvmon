@@ -13,21 +13,19 @@
  * limitations under the License.
  */
 
-var path = require('path');
-var connect = require('connect');
-var serveStatic = require('serve-static');
+var NvmonConfig = {
+  serverList: [
+    { name: "server1", ip: "115.145.134.134" },
+    { name: "server2", ip: "10.201.134.132" },
+    { name: "server3", ip: "10.201.134.133" },
+    { name: "server4", ip: "10.201.134.134" },
+    { name: "server5", ip: "10.201.134.135" },
+    { name: "server6", ip: "10.201.134.136" },
+    { name: "server7", ip: "10.201.134.137" },
+    { name: "server8", ip: "10.201.134.138" },
+    { name: "server9", ip: "10.201.134.139" },
+    { name: "server10", ip: "10.201.134.140" },
+    { name: "server11", ip: "10.201.134.141" },
 
-console.log(process.argv);
-var portNum = undefined;
-if (process.argv.length > 2) {
-  portNum = process.argv[2];
-} else {
-  portNum = 8890;
-}
-var clientPath = path.join(__dirname, './client');
-console.log(clientPath);
-
-var server = connect();
-server.use(serveStatic(clientPath)).listen(portNum, function() {
-  console.log('Web Server Started! (Port ' + portNum + ')');
-});
+  ]
+};

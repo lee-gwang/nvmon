@@ -120,7 +120,8 @@ function isBlacklisted(pname) {
 ServerCard.prototype.refresh = function() {
   if (this.cardId === undefined || this.contentsId === undefined) return;
 
-  var smiAddr = 'http://' + this.url + ':' + this.port;
+  var smiAddr = 'http://' + this.url + ':' + '8891'
+  // this.port;
 
   var httpGetAsync =
       (theUrl, callback) => {
@@ -134,7 +135,8 @@ ServerCard.prototype.refresh = function() {
                 xmlHttp.status == 500)
               callback(undefined);
           }
-        } xmlHttp.open('GET', theUrl, true);  // true for asynchronous
+        } 
+        xmlHttp.open('GET', theUrl, true);  // true for asynchronous
         xmlHttp.send(null);
       }
 
