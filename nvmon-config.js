@@ -14,7 +14,7 @@
  */
 
 var config = {
-  port: 8891,
+  port: 8899,
   /* Name filter of interface that will serve nvmon smi server*/
   /* IP address filter of interface that will serve nvmon smi server*/
 };

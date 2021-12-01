@@ -120,7 +120,7 @@ function isBlacklisted(pname) {
 ServerCard.prototype.refresh = function() {
   if (this.cardId === undefined || this.contentsId === undefined) return;
 
-  var smiAddr = 'http://' + this.url + ':' + '8891'
+  var smiAddr = 'http://' + this.url + ':' + '8899'
   // this.port;
 
   var httpGetAsync =

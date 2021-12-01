@@ -14,7 +14,7 @@ NVMon is composed of SMI Server and UI Server.
 ## SMI Server (on server with Nvidia GPUs)
 1. Download NVMon on servers running Nvidia GPUs.
 
-```$ git clone https://github.com/RedCarrottt/nvmon```
+```$ git clone https://github.com/lee-gwang/nvmon```
 
 2. Install dependent packages
 
@@ -22,12 +22,12 @@ NVMon is composed of SMI Server and UI Server.
 
 3. Run the NVMon server
 
-```node ./install-smi-server.sh```
+```node ./nvmon-smi-server.sh```
 
 ## UI Server (on any machine)
 1. Download NVMon on client
 
-```$ git clone https://github.com/RedCarrottt/nvmon```
+```$ git clone https://github.com/lee-gwang/nvmon```
 
 2. Install dependent packages
 
@@ -35,12 +35,10 @@ NVMon is composed of SMI Server and UI Server.
 
 3. Edit your NVMon UI config (Input the name and IP address of the GPU server)
 
-```$ cp client/nvmon-config.js.example client/nvmon-config.js```
-
 ```$ vi client/nvmon-config.js```
 
 4. Run the UI server
 
-```node ./install-ui-server.js```
+```node ./nvmon-ui-server.js```
 
 5. Open your web browser and connect to the UI server (Default Port = 8080)
